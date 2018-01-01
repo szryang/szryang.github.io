@@ -1,0 +1,134 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Ryan Jie Yang"><title>learn swift again · 左手代码 右手产品</title><meta name="description" content="时间越来越少了，花了两个小时把swift的教程的预览部分看完了，相当于又学了一遍swift
+照着下面敲一遍，基本就知道swift的方方面面了，当然，我已经写了好多行swift代码了
+//: Playground - noun: a place where people can play
+import"><meta name="keywords" content=""><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"></head><body><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">过不一样的人生</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">左手代码 右手产品</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">Home</a></li><li><a href="/archives">Archive</a></li><li><a href="/tags">Tags</a></li><li class="soc"><a href="http://yoursite.com/atom.xml" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2018&nbsp;<a target="_blank" href="http://yoursite.com" rel="noopener noreferrer">Ryan Jie Yang</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>learn swift again</a></p><p class="post-meta"><span class="date meta-item">Posted at&nbsp;2016-10-29</span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/swift/" title="swift" class="a-tag">swift</a><span>&nbsp;</span></span></p><p class="post-abstract"><p>时间越来越少了，花了两个小时把swift的教程的预览部分看完了，相当于又学了一遍swift</p>
+<p>照着下面敲一遍，基本就知道swift的方方面面了，当然，我已经写了好多行swift代码了<br><code></code></p>
+<p>//: Playground - noun: a place where people can play</p>
+<p>import UIKit</p>
+<p>// var 声明变量<br>var value = 42</p>
+<p>// let 声明常量<br>let instValue = 59</p>
+<p>// 显示指定类型<br>let doubleValue: Double = 32.9</p>
+<p>let floatValue: Float = 48.9</p>
+<p>let label = “The width is “<br>let width = 94<br>let widthLabel = label + String(width)</p>
+<p>print(widthLabel)</p>
+<p>// () 转换为字符串<br>let apples: Int = 32<br>let appleSummary = “I have (apples) apples”<br>print(appleSummary)</p>
+<p>// [] 来创建数组，数组里面可以用key-value形式<br>var shoppingList = [“catfish”, “water”, “tulips”, “blue paint”]<br>print(shoppingList[1])</p>
+<p>// key-values<br>var occupations = [<br>    “fruit” : “apple”,<br>    “animal” : “tiger”<br>]</p>
+<p>print(occupations[“animal”]!)</p>
+<p>// 创建空字数组<br>var emptyArray = <a href="">String</a><br>emptyArray.append(“Hello”)<br>print(emptyArray[0])</p>
+<p>// 创建空字典<br>var emptyDictionary = <a href="">String: Float</a><br>emptyDictionary[“hello”] = 32.9<br>print(emptyDictionary[“hello”]!)</p>
+<p>// 控制流<br>let individualScores = [75, 43, 103, 87, 12]<br>var teamScore = 0<br>for score in individualScores {<br>    if score &gt; 50 {</p>
+<pre><code>    teamScore += 3
+} else {
+
+    teamScore += 1
+}
+</code></pre><p>}</p>
+<p>print(teamScore)</p>
+<p>// if 和 let一起用，处理nil<br>var optionalString: String = “Hello”<br>print((optionalString == nil))<br>print(optionalString)</p>
+<p>var optionalName: String? = “John Appleseed”<br>var greeting = “Hello!”<br>if let name = optionalName {<br>    greeting = “Hello, (name)”<br>}<br>print(greeting)</p>
+<p>optionalName = nil<br>if let name = optionalName {</p>
+<p>} else {</p>
+<pre><code>print(&quot;else here&quot;)
+</code></pre><p>}</p>
+<p>// switch case<br>let vagetable = “red pepper”<br>switch vagetable {<br>case “celery”:<br>    let vegetableComment = “Add some raisins and make ants on a log”<br>case “cucumber”, “watercress”:<br>    let vegetableComment = “That would make a good tea sandwich”<br>case let x where x.hasSuffix(“pepper”):<br>    let vegetableComment = “Is it a spicy (x)”<br>    print(vegetableComment)</p>
+<p>default:<br>    let vegetableComment = “Eveything tastes good in soup”<br>}</p>
+<p>// for-in 来遍历字典<br>let interestingNumbers = [<br>    “Prime”: [2, 3, 5, 7, 11, 13],<br>    “Fibonacci”: [1, 1, 2, 3, 5, 8],<br>    “Square”: [1, 4, 9, 16, 25]<br>]</p>
+<p>var largest = 0<br>for (key, numbers) in interestingNumbers {<br>    for number in numbers {</p>
+<pre><code>    if number &gt; largest {
+        largest = number
+    }
+}
+</code></pre><p>}</p>
+<p>print(largest)</p>
+<p>// while 循环<br>var n = 2<br>while n &lt; 100 {</p>
+<pre><code>n = n * 2
+</code></pre><p>}<br>print(n)</p>
+<p>var m = 2<br>repeat {</p>
+<pre><code>m = m * 2
+</code></pre><p>} while m &lt; 100<br>print(m)</p>
+<p>// ..&lt; 来表示范围[不包含上边界], …&lt; 操作符似乎没有了 传统for循环也似乎没有了 swift3.0<br>var firstForLoop = 0<br>for i in 0..&lt;4 {<br>    firstForLoop += i<br>}<br>print(firstForLoop)</p>
+<p>// 函数和闭包<br>func greet(name: String, day: String) -&gt; String {<br>    return “Hello (name), today is (day)”<br>}</p>
+<p>print(greet(name: “Bob”, day: “Tuesday”))</p>
+<p>// 返回元组多个值<br>func calculateStatistics(scores: [Int]) -&gt; (min: Int, max: Int, sum: Int) {<br>    var min = scores[0]<br>    var max = scores[0]<br>    var sum = 0</p>
+<pre><code>for score in scores {
+    if score &lt; min {
+        min = score
+    } else if score &gt; max {
+        max = score
+    }
+    sum += score
+}
+
+return (min, max, sum)
+</code></pre><p>}</p>
+<p>let statistics = calculateStatistics(scores: [5, 3, 100, 3, 9])<br>print(statistics.min)<br>print(statistics.2)</p>
+<p>// 函数可以带可变参数<br>func sumOf(numbers: Int…) -&gt; Int {<br>    var sum = 0<br>    for number in numbers {<br>        sum += number<br>    }<br>    return sum<br>}</p>
+<p>print(sumOf(numbers: 1, 2, 4))</p>
+<p>// 内嵌函数<br>func return15() -&gt; Int {<br>    var y = 10<br>    func add() {<br>        y += 5<br>    }<br>    add()<br>    return y<br>}</p>
+<p>print(return15())</p>
+<p>// 函数可以作为first-class 可以被返回<br>func makeIncrement() -&gt; ((Int) -&gt; Int) {<br>    func addOne(number: Int) -&gt; Int {<br>        return 1 + number<br>    }<br>    return addOne<br>}</p>
+<p>var increment = makeIncrement()<br>print(increment(9))</p>
+<p>// 函数也可以作为参数传入另外一个函数<br>func print2(list: [Int], condition: ((Int) -&gt; Bool)) -&gt; Void {<br>    for n in  list {</p>
+<pre><code>    if condition(n) == true {
+
+        print(n)
+    }
+}
+</code></pre><p>}</p>
+<p>print2(list: [9, 10, 11, 12, 143, 15, 18]) { (num) -&gt; Bool in</p>
+<pre><code>if num % 2 == 0 {
+
+    return true
+}
+
+return false
+</code></pre><p>}</p>
+<p>// 使用闭包<br>var numbers = [9, 10, 11, 12, 14, 19, 21]<br>numbers = numbers.map { (num) -&gt; Int in<br>    let result = num * 3<br>    return result<br>}<br>print(numbers)</p>
+<p>// 对象和类<br>class Shape {<br>    var numberOfSides = 0<br>    func simpleDescription() -&gt; String {<br>        return “A shape with (numberOfSides)”<br>    }<br>}</p>
+<p>var s = Shape()<br>print(s.simpleDescription())<br>s.numberOfSides = 9<br>print(s.simpleDescription())</p>
+<p>class NamedShape {<br>    var numberOfSides = 0<br>    var name: String</p>
+<pre><code>init(name: String) {
+    self.name = name
+}
+
+func simpleDescription() -&gt; String {
+    return &quot;A shape with \(numberOfSides)  name -&gt; \(name)&quot;
+}
+</code></pre><p>}</p>
+<p>var ns = NamedShape(name: “Kity”)<br>print(ns.simpleDescription())</p>
+<p>// 继承<br>class Square : NamedShape {<br>    var sideLength: Double = 0.0</p>
+<pre><code>init(sideLength: Double, name: String) {
+
+    super.init(name: name)
+    self.sideLength = sideLength
+    numberOfSides = 4
+}
+
+
+func area() -&gt; Double {
+    return sideLength * sideLength
+}
+
+override func simpleDescription() -&gt; String {
+    return &quot;A square with sides of length \(self.sideLength)&quot;
+}
+</code></pre><p>}</p>
+<p>var square = Square(sideLength: 14.4, name: “Square”)<br>print(“Square.area() -&gt; (square.area())”)</p>
+<p>// 扩展和协议<br>protocol ExampleProtocol {<br>    var simpleDescription: String {get}<br>    mutating func adjust()<br>}</p>
+<p>class SimpleClass : ExampleProtocol {<br>    internal func adjust() {<br>        simpleDescription += “Now 100% adjusted..”<br>    }</p>
+<pre><code>var simpleDescription: String = &quot;A very simple class&quot;
+</code></pre><p>}</p>
+<p>var sc = SimpleClass()<br>sc.adjust()<br>print(sc.simpleDescription)</p>
+<p>extension Int {</p>
+<pre><code>func simpleDescription() -&gt; String {
+
+    return &quot;Simple number is \(self)&quot;
+}
+</code></pre><p>}</p>
+<p>var snum: Int = 39<br>print(snum.simpleDescription())</p>
+<p>// 泛型<br>func repeat<em>itemType<itemtype>(item: ItemType, times: Int) -&gt; [ItemType] {<br>    var result = <a href="">ItemType</a><br>    for </itemtype></em> in 0..&lt;times {<br>        result.append(item)<br>    }<br>    return result<br>}</p>
+<p>print(repeat_itemType(item: “kock”, times: 5))</p>
+<p></p>
+<p>swift基础版本的教程准备每天刷一点，搞明白swift的方方面面。</p>
+</p></div><div class="share"><span>Share</span>&nbsp;<span class="soc"><a href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank" class="fa fa-bookmark"></a></span><span class="soc"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));" class="fa fa-weibo"></a></span><span class="soc"><a href="http://twitter.com/home?status=http://yoursite.com/2016/10/29/learn-swift-again/%20左手代码 右手产品%20learn swift again" class="fa fa-twitter"></a></span></div><div class="pagination"><p class="clearfix"><span class="pre pagbuttons"><a role="navigation" href="/2016/10/30/技术功利主义/" title="技术功利主义"><i class="fa fa-angle-double-left"></i>&nbsp;Previous post: 技术功利主义</a></span><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2016/10/28/白驹过隙/" title="白驹过隙">Next post: 白驹过隙&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2018&nbsp;<a target="_blank" href="http://yoursite.com" rel="noopener noreferrer">Ryan Jie Yang</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script></body></html>
