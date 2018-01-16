@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-15T11:02:43.023Z</updated>
+  <updated>2018-01-16T03:15:32.094Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>为什么要留在深圳?</title>
+    <link href="http://yoursite.com/2018/01/16/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%95%99%E5%9C%A8%E6%B7%B1%E5%9C%B3/"/>
+    <id>http://yoursite.com/2018/01/16/为什么要留在深圳/</id>
+    <published>2018-01-16T03:15:32.000Z</published>
+    <updated>2018-01-16T03:15:32.094Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;​    现代社会人口流动性是常态，非流动性反而不是普遍状态。如果想取得比较大的成就，就应该待在大城市里面，和优秀的人产生连接，从而做出与众不同的事情。&lt;/p&gt;
+&lt;p&gt;​   
+        
+      
+    
+    </summary>
+    
+    
+      <category term="随想" scheme="http://yoursite.com/tags/%E9%9A%8F%E6%83%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>Leaf/go游戏服务器开发 -- 001</title>
@@ -437,31 +462,6 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>自修101 - 坦诚(001)</title>
-    <link href="http://yoursite.com/2017/02/15/%E8%87%AA%E4%BF%AE101-%E5%9D%A6%E8%AF%9A-001/"/>
-    <id>http://yoursite.com/2017/02/15/自修101-坦诚-001/</id>
-    <published>2017-02-15T02:31:46.000Z</published>
-    <updated>2018-01-01T10:21:41.109Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;要学会坦诚平静的面对问题&lt;/p&gt;
-&lt;p&gt;例如：
-        
-      
-    
-    </summary>
-    
-    
-      <category term="自修" scheme="http://yoursite.com/tags/%E8%87%AA%E4%BF%AE/"/>
     
   </entry>
   
