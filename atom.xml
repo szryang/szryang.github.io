@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-16T03:15:32.094Z</updated>
+  <updated>2018-01-17T12:33:47.759Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Leaf/go消息协议头修改 --002</title>
+    <link href="http://yoursite.com/2018/01/17/Leaf-go%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE%E5%A4%B4%E4%BF%AE%E6%94%B9/"/>
+    <id>http://yoursite.com/2018/01/17/Leaf-go消息协议头修改/</id>
+    <published>2018-01-17T12:29:59.000Z</published>
+    <updated>2018-01-17T12:33:47.759Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;花了两个小时修改了Leaf/go socket消息协议，修改为了比较满意的协议格式&lt;/p&gt;
+&lt;p&gt;明天要做的事情是websocket消息数据的测试&lt;/p&gt;
+&lt;p&gt;PS：&lt;/p&gt;
+&lt;p&gt;要花时间深入学习go语言，还有很多细节不是很清楚，需要仔细阅读go语言手册。
+        
+      
+    
+    </summary>
+    
+    
+      <category term="游戏与创业" scheme="http://yoursite.com/tags/%E6%B8%B8%E6%88%8F%E4%B8%8E%E5%88%9B%E4%B8%9A/"/>
+    
+  </entry>
+  
+  <entry>
     <title>为什么要留在深圳?</title>
     <link href="http://yoursite.com/2018/01/16/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%95%99%E5%9C%A8%E6%B7%B1%E5%9C%B3/"/>
     <id>http://yoursite.com/2018/01/16/为什么要留在深圳/</id>
     <published>2018-01-16T03:15:32.000Z</published>
-    <updated>2018-01-16T03:15:32.094Z</updated>
+    <updated>2018-01-16T05:35:48.400Z</updated>
     
     <summary type="html">
     
@@ -448,20 +475,6 @@
     
     
       <category term="自修101" scheme="http://yoursite.com/tags/%E8%87%AA%E4%BF%AE101/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>nothing, you need to fight</title>
-    <link href="http://yoursite.com/2017/02/16/nothing-you-need-to-fight/"/>
-    <id>http://yoursite.com/2017/02/16/nothing-you-need-to-fight/</id>
-    <published>2017-02-16T10:06:23.000Z</published>
-    <updated>2018-01-01T10:21:40.855Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
     
   </entry>
   
